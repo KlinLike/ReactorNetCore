@@ -1,6 +1,6 @@
 # ReactorNetCore
 
-高性能网络库，基于 epoll 实现的 Reactor 模式，支持 Echo 服务器、HTTP 服务和 WebSocket 服务。
+高性能网络库，基于 epoll 实现的 Reactor 模式，主要是为了实现KVS，此外支持 Echo 服务器、HTTP 服务和 WebSocket 服务。
 
 ## ✨ 核心特性
 
@@ -16,20 +16,6 @@
 - Linux 系统 (内核 ≥ 3.0)
 - GCC ≥ 9.0
 - Python ≥ 3.8 (仅测试需要)
-
-## 🛠 安装
-
-```bash
-# 克隆仓库
-git clone https://github.com/yourusername/ReactorNetCore.git
-cd ReactorNetCore
-
-# 编译调试版本
-make
-
-# 编译发布版本
-make release
-```
 
 ## 🚀 快速开始
 
@@ -61,7 +47,7 @@ ReactorNetCore/
 ├── include/     # 头文件
 │   ├── reactor/ # Reactor 模式实现
 │   ├── logger/  # 日志系统
-│   └── kv_store/ # KV存储(暂停开发)
+│   └── kv_store/ # KV存储
 ├── src/         # 源代码
 ├── tests/       # 测试工具
 └── Makefile     # 构建脚本
@@ -72,7 +58,6 @@ ReactorNetCore/
 make          # 调试模式 (默认)
 make release  # 发布模式 (-O2优化)
 make clean    # 清理构建
-make docs     # 生成文档 (需要doxygen)
 make run      # 编译并运行echo_server
 ```
 
